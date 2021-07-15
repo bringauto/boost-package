@@ -29,9 +29,7 @@ CMLIB_DEPENDENCY(
 	OUTPUT_PATH_VAR _boost_ROOT
 )
 
-STRING(REPLACE "." "_" std_version ${version})
-STRING(REPLACE "v" "" std_version ${std_version})
-SET(Boost_ROOT "${_boost_ROOT}/boost_${std_version}"
+SET(Boost_ROOT "${_boost_ROOT}/"
 	CACHE STRING
 	"boost root directory"
 	FORCE
@@ -72,7 +70,6 @@ SET(Boost_NO_SYSTEM_PATHS ON
 UNSET(_boost_ROOT)
 UNSET(boost_url)
 UNSET(platform_string)
-UNSET(std_version)
 UNSET(version)
 UNSET(release_libs)
 UNSET(debug_libs)
