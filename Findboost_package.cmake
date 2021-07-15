@@ -20,7 +20,7 @@ CMAKE_PACKAGE_TOOLS_PLATFORM_STRING(platform_string)
 
 SET(version v1.76.0)
 SET(boost_url
-	"https://github.com/bringauto/boost-package/releases/download/${version}/libboost-dev_${version}_${platform_string}.tar.gz"
+	"https://github.com/bringauto/boost-package/releases/download/${version}/libboost-dev_${version}_${platform_string}.tar.bz2"
 )
 
 CMLIB_DEPENDENCY(
