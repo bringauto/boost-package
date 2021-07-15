@@ -41,7 +41,7 @@ pushd "${BUILD_DIR}" || exit 1
 	mkdir -p "${ARCHIVE_DIR}"
 	pushd "${ARCHIVE_DIR}" || exit 1
 		platform_string=$(get_suffix)
-		archive_name="libboost-dev_v${boost_version_with_dots}-${platform_string}.tar.bz2"
+		archive_name="libboost-dev_v${boost_version_with_dots}_${platform_string}.tar.bz2"
 		tar -jcf ${archive_name} -C ${SCRIPT_DIR}/boost_install/ .
 	popd || exit 1
 	mv ${ARCHIVE_DIR}/*.tar.bz2 ./
